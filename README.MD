@@ -29,6 +29,6 @@ This project utilizes Docker, a containerization platform, to streamline applica
 3. **Docker Registry (Docker Hub):** The Docker registry is a repository for Docker images. It stores publicly available images as well as private images uploaded by users. Docker Hub is the official Docker registry maintained by Docker, Inc., where users can discover, share, and collaborate on Docker images.
 
 ## Docker Architecture Diagram
-![Docker Architecture](docker_architecture.png)
+![Docker Architecture](https://devopedia.org/images/article/101/8323.1565281088.png)
 
 By leveraging Docker's workflow and architecture, this project aims to provide developers with a seamless and efficient platform for building, deploying, and managing applications.
