@@ -1,4 +1,4 @@
-````markdown
+```markdown
 # Docker Readme
 
 ## Overview
@@ -18,7 +18,6 @@ This project utilizes Docker, a containerization platform, to streamline applica
 
 1. **Docker Client:** The Docker client is a command-line tool that allows users to interact with the Docker daemon. Developers use the Docker client to build, manage, and control Docker containers and images.
 2. **Docker Host (Docker Daemon):** The Docker host, also known as the Docker daemon, is responsible for managing Docker objects such as containers, images, networks, and volumes. It listens for Docker API requests and performs the necessary actions to create and manage Docker containers.
-
 3. **Docker Registry (Docker Hub):** The Docker registry is a repository for Docker images. It stores publicly available images as well as private images uploaded by users. Docker Hub is the official Docker registry maintained by Docker, Inc., where users can discover, share, and collaborate on Docker images.
 
 ## Docker Architecture Diagram
@@ -75,45 +74,41 @@ EXPOSE 5173
 # command to run the app
 CMD npm run dev
 ```
-````
 
+## Docker Commands
+
+### Build Docker Image:
+```bash
+docker build -t foldername .
 ```
 
+This command builds a Docker image using the Dockerfile in the current directory (`.`) and tags it with the specified name (`foldername`).
+
+### Run Docker Container:
+```bash
+docker run foldername
 ```
 
-Here are the commands for building, running, tagging, and pushing a Docker image:
+This command runs a Docker container using the specified Docker image (`foldername`).
 
-1. **Build Docker Image:**
-   ```bash
-   docker build -t foldername .
-   ```
+### Run Docker Container with Port Mapping:
+```bash
+docker run -p 5173:5173 foldername
+```
 
-   This command builds a Docker image using the Dockerfile in the current directory (`.`) and tags it with the specified name (`foldername`).
+This command runs a Docker container with port mapping, where port `5173` of the container is mapped to port `5173` on the host machine.
 
-2. **Run Docker Container:**
-   ```bash
-   docker run foldername
-   ```
+### Tag Docker Image:
+```bash
+docker tag foldername username/imagename
+```
 
-   This command runs a Docker container using the specified Docker image (`foldername`).
+This command tags a Docker image with a new name (`username/imagename`). It's useful for preparing the image for publishing to a Docker registry.
 
-3. **Run Docker Container with Port Mapping:**
-   ```bash
-   docker run -p 5173:5173 foldername
-   ```
+### Push Docker Image:
+```bash
+docker push username/imagename
+```
 
-   This command runs a Docker container with port mapping, where port `5173` of the container is mapped to port `5173` on the host machine.
-
-4. **Tag Docker Image:**
-   ```bash
-   docker tag foldername username/imagename
-   ```
-
-   This command tags a Docker image with a new name (`username/imagename`). It's useful for preparing the image for publishing to a Docker registry.
-
-5. **Push Docker Image:**
-   ```bash
-   docker push username/imagename
-   ```
-
-   This command pushes the tagged Docker image to a Docker registry, making it available for others to use.
+This command pushes the tagged Docker image to a Docker registry, making it available for others to use.
+```
