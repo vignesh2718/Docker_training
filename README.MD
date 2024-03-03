@@ -1,7 +1,4 @@
-Sure! Here's the content formatted as a README.md file that you can use on GitHub:
-
-```markdown
-# Docker Project Readme
+# Docker  Readme
 
 ## Overview
 
