@@ -21,4 +21,14 @@ This project utilizes Docker, a containerization platform, to streamline applica
 - **Usage:** Containers provide a lightweight and portable runtime environment for applications. Developers can create, start, stop, and delete containers using Docker commands.
 - **Advantages:** Containers offer efficient resource utilization, fast startup times, and scalability. They enable developers to package applications with their dependencies and run them consistently across different environments.
 
-By leveraging Docker's image and container concepts, this project aims to provide developers with a flexible and efficient platform for building, deploying, and managing applications.
+## Docker Workflow
+1. **Docker Client:** The Docker client is a command-line tool that allows users to interact with the Docker daemon. Developers use the Docker client to build, manage, and control Docker containers and images.
+   
+2. **Docker Host (Docker Daemon):** The Docker host, also known as the Docker daemon, is responsible for managing Docker objects such as containers, images, networks, and volumes. It listens for Docker API requests and performs the necessary actions to create and manage Docker containers.
+
+3. **Docker Registry (Docker Hub):** The Docker registry is a repository for Docker images. It stores publicly available images as well as private images uploaded by users. Docker Hub is the official Docker registry maintained by Docker, Inc., where users can discover, share, and collaborate on Docker images.
+
+## Docker Architecture Diagram
+![Docker Architecture](docker_architecture.png)
+
+By leveraging Docker's workflow and architecture, this project aims to provide developers with a seamless and efficient platform for building, deploying, and managing applications.
